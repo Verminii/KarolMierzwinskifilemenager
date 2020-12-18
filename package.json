@@ -1,0 +1,24 @@
+{
+  "name": "projekt-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "formidable": "^1.2.2",
+    "install": "^0.13.0",
+    "npm": "^6.14.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "master"
+  },
+  "author": "KarolM",
+  "license": "ISC"
+}
