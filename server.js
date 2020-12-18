@@ -38,6 +38,7 @@ app.post('/handleUpload', function (req, res) {
                 id += 1
                 console.log(files)
                 var img = file.name.substr(file.name.indexOf('.') + 1)
+                console.log(img)
                 if (img != "png" && img != "txt" && img != "jpg" && img != "pdf")
                     img = "unknown"
                 tab.push({ id: id, imagePath: `gfx/${img}.png`, name: file.name, size: file.size, type: file.type, generatedName: path.basename(file.path), date: new Date().getTime(), path: file.path })
@@ -47,6 +48,7 @@ app.post('/handleUpload', function (req, res) {
             id += 1
             console.log(files)
             var img = files.fileToUpload.name.substr(files.fileToUpload.name.indexOf('.') + 1)
+            console.log(img)
             if (img != "png" && img != "txt" && img != "jpg" && img != "pdf")
                 img = "unknown"
             tab.push({ id: id, imagePath: `gfx/${img}.png`, name: files.fileToUpload.name, size: files.fileToUpload.size, type: files.fileToUpload.type, generatedName: path.basename(files.fileToUpload.path), date: new Date().getTime(), path: files.fileToUpload.path })
