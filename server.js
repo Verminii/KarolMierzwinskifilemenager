@@ -3,7 +3,7 @@ var hbs = require('express-handlebars')
 var path = require("path")
 var formidable = require("formidable")
 var app = express()
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 app.set('views', path.join(__dirname, 'views'))                                                        // ustalamy katalog views
 app.engine('hbs', hbs({ defaultLayout: 'index.hbs', extname: '.hbs', partialsDir: 'views/partials' }))   // domyślny layout, nazwa rozszerzenia oraz miejsce partiali
 app.set('view engine', 'hbs')                                                                          // określenie nazwy silnika szablonów
