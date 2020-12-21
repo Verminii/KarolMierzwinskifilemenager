@@ -55,7 +55,7 @@ app.post('/handleUpload', function (req, res) {
 
         }
     })
-    res.redirect("/files")
+    //res.redirect("/files")
 })
 
 app.get("/deleteA", function (req, res) {
@@ -84,8 +84,6 @@ app.get("/info:p", function (req, res) {
 const server = app.listen(PORT, function () {
     console.log("Server działa na porcie : " + PORT)
 })
-
-server.setTimeout(300000) //
 
 app.use(express.static("static"))
 
