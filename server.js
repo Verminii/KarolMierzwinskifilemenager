@@ -81,9 +81,11 @@ app.get("/info:p", function (req, res) {
     }
 })
 
-app.listen(PORT, function () {
+const server = app.listen(PORT, function () {
     console.log("Server działa na porcie : " + PORT)
 })
+
+server.setTimeout(300000) //
 
 app.use(express.static("static"))
 
