@@ -55,7 +55,7 @@ app.post('/handleUpload', function (req, res) {
 
         }
     })
-    //res.redirect("/files")
+    res.render('files.hbs', { tab })
 })
 
 app.get("/deleteA", function (req, res) {
