@@ -54,8 +54,8 @@ app.post('/handleUpload', function (req, res) {
             tab.push({ id: id, imagePath: `gfx/${img}.png`, name: files.fileToUpload.name, size: files.fileToUpload.size, type: files.fileToUpload.type, generatedName: path.basename(files.fileToUpload.path), date: new Date().getTime(), path: files.fileToUpload.path })
 
         }
+        res.redirect("/files")
     })
-
 })
 
 app.get("/deleteA", function (req, res) {
